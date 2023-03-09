@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <title>Tour the World with Us!</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <img src="ASSETS/logo.png" id="logo" alt="Tour the World with Us! Logo" />
+      <nav>
+        <a href="#home">
+          <button type="button">Home</button>
+        </a>
+        <a href="#packages">
+          <button type="button">Our Packages</button>
+        </a>
+        <a href="#contact-us-form">
+          <button type="button">Call Us</button>
+        </a>
+      </nav>
+    </header>
+    <!--MAIN CONTENT-->
+    <main>
+      <!--HOME-->
+      <section id="home">
+        <h1>Your Trusted Travel Agents</h1>
+        <h6>-your happiness is our happiness-</h6>
+      </section>
+      <!--TESTIMONY-FORM-->
+      <section id="testimony-form">
+        <!--TESTIMONY & INFORMATION-->
+        <div class="testimony-information">
+          <!--TESTIMONY-->
+          <div class="testimony">
+            <img src="/ASSETS/Japan.jpg" alt="Japan" />
+            <div class="testimony-caption">
+              <p>
+                "Finally, I can go on holiday to Japan! Thanks, TurDeWerld for a
+                great vacation! Let's tour again!"
+              </p>
+            </div>
+            <div class="testimony-person">
+              <img src="ASSETS/person.png" alt="person" />
+              <div class="person-info">
+                <h6>Adriana Putri Nugraha</h6>
+                <p>Software Engineer, 20</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimony">
+            <img src="/ASSETS/Korea.jpg" alt="Korea" />
+            <div class="testimony-caption">
+              <p>
+                "South Korea not only has an amusing culture but also has many
+                extraordinary and beautiful tourist destinations. I hope I can
+                meet my Oppa on my next trip!"
+              </p>
+            </div>
+            <div class="testimony-person">
+              <img src="ASSETS/person.png" alt="person" />
+              <div class="person-info">
+                <h6>Pandita Anugrah</h6>
+                <p>Front End Engineer, 23</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimony">
+            <img src="/ASSETS/Vietnam.jpg" alt="Vietnam" />
+            <div class="testimony-caption">
+              <p>
+                "It is my second time on holiday to Vietnam with TurDeWerld. I
+                will never be bored."
+              </p>
+            </div>
+            <div class="testimony-person">
+              <img src="ASSETS/person.png" alt="person" />
+              <div class="person-info">
+                <h6>Jagawana Bawana</h6>
+                <p>Back End Engineer, 25</p>
+              </div>
+            </div>
+          </div>
+          <!--INFORMATION-->
+          <div class="information">
+            <p>
+              Planning a vacation is a complicated and time-consuming process.
+              Here are the advantages of using our travel agents to help plan
+              and book your family tour:
+            </p>
+            <ol>
+              <li class="information-list">
+                <div class="list-number">1</div>
+                <p class="list-text">Convenience</p>
+              </li>
+              <li class="information-list">
+                <div class="list-number">2</div>
+                <p class="list-text">Cost savings</p>
+              </li>
+              <li class="information-list">
+                <div class="list-number">3</div>
+                <p class="list-text">Tour assistance</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <!--CONTACT US FORM-->
+        <form
+          id="contact-us-form"
+          name="contact-us-form"
+          onsubmit="return validateform()"
+        >
+          <h2>Contact Us</h2>
+          <p>
+            Please fill out this form if you are interested in touring with us.
+            Sales will contact you within 1x24 hours after we receive the data.
+          </p>
+          <!--Full Name-->
+          <div class="col-25">
+            <label for="name">Your Full Name:</label>
+          </div>
+          <div class="col-75">
+            <input id="name" type="text" placeholder="First and last name" />
+          </div>
+          <!--EMAIL ADDRESS-->
+          <div class="col-25">
+            <label for="email">Email Address:</label>
+          </div>
+          <div class="col-75">
+            <input id="email" type="email" placeholder="example@gmail.com" />
+          </div>
+          <!--DESTINATION LIST-->
+          <div class="col-25">
+            <label for="destination">What are you interested in?</label>
+          </div>
+          <div class="col-75">
+            <input
+              name="destination"
+              list="destination"
+              placeholder="Select an option"
+            />
+            <datalist id="destination">
+              <option value="Japan"></option>
+              <option value="Thailand"></option>
+              <option value="South Korea"></option>
+              <option value="Vietnam"></option>
+              <option value="Luxembourg"></option>
+              <option value="Iceland"></option>
+            </datalist>
+          </div>
+          <!--SUBMIT BUTTON-->
+          <div class="sub-75">
+            <input type="submit" value="SEND" />
+          </div>
+        </form>
+      </section>
+      <!--OUR PACKAGES-->
+      <section id="packages">
+        <h1>Our Packages</h1>
+        <div class="packages-row">
+          <div class="packages-card">
+            <img src="ASSETS/loc.png" alt="location" />
+            <div class="packages-content">
+              <h1>Japan</h1>
+              <p>
+                Not only Japanese cherry blossoms and festival tours, but we can
+                also visit Japanese magical theme parks and ancient temples.
+              </p>
+            </div>
+          </div>
+          <div class="packages-card">
+            <img src="ASSETS/loc.png" alt="location" />
+            <div class="packages-content">
+              <h1>Thailand</h1>
+              <p>
+                From the temples and street food to the pristine beaches and
+                luxury hotels, you've got every excuse for a holiday to Thailand
+                that is suited for your family.
+              </p>
+            </div>
+          </div>
+          <div class="packages-card">
+            <img src="ASSETS/loc.png" alt="location" />
+            <div class="packages-content">
+              <h1>South Korea</h1>
+              <p>
+                South Korea has a lot to offer travelers. Let's visit the
+                beautiful palace and hunt for delicious food!
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="h-width" />
+        <div class="packages-row">
+          <div class="packages-card">
+            <img src="ASSETS/loc.png" alt="location" />
+            <div class="packages-content">
+              <h1>Vietnam</h1>
+              <p>
+                Natural beauty awaits you in Vietnam. Let's take the opportunity
+                to get to know the local people and their unique culture!
+              </p>
+            </div>
+          </div>
+          <div class="packages-card">
+            <img src="ASSETS/loc.png" alt="location" />
+            <div class="packages-content">
+              <h1>Luxembourg</h1>
+              <p>
+                Luxembourg-City is full of history, artistic and cultural
+                treasures just waiting to be visited; attractions and
+                picturesque spots just waiting to be discovered.
+              </p>
+            </div>
+          </div>
+          <div class="packages-card">
+            <img src="ASSETS/loc.png" alt="location" />
+            <div class="packages-content">
+              <h1>Iceland</h1>
+              <p>
+                Explore their stunning landscape, enjoy the whole open space,
+                and experience life in a relatively small nation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--CALL BUTTON-->
+      <section id="call-us">
+        <h1>Ready to tour the world?</h1>
+        <p>
+          Contact us when you are ready to plan your vacation and tour the
+          world. Click the button below to go on holiday immediately.
+        </p>
+        <a class="call-us" href="#contact-us-form">
+          <button type="button" a href="#contact-us-form">Call Us</button>
+        </a>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer>
+      <img src="ASSETS/logo.png" />
+      <div class="footer-tnc">
+        <p>Terms of Service</p>
+        <p>Privacy Policy</p>
+      </div>
+      <p class="footer-cp">&copy; 2023 TurDeWerld</p>
+    </footer>
+  </body>
+  <script src="js/index.js"></script>
+</html>
