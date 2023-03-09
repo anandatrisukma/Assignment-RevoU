@@ -18,7 +18,7 @@ carousel();
 
 function carousel() {
   var i;
-  var x = document.getElementsByClassName("testimony");
+  var x = document.getElementsByClassName("testimony-wrapper");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
